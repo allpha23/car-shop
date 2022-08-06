@@ -2,8 +2,8 @@ import { z } from 'zod';
 import { VehicleZodSchema } from './IVehicle';
 
 const CarZodSchema = VehicleZodSchema.extend({
-  doorsQty: z.number().gte(2).lte(4),
-  seatsQty: z.number().gte(2).lte(7),
+  doorsQty: z.number().min(2).max(4),
+  seatsQty: z.number().min(2).max(7),
 });
 
 type ICar = z.infer<typeof CarZodSchema>;

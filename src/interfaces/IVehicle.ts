@@ -1,13 +1,11 @@
 import { z } from 'zod';
 
 const VehicleZodSchema = z.object({
-  model: z.string().min(3, {
-    message: 'Model must be 3 or more characters long' }),
-  year: z.number().gte(1900).lte(2022),
-  color: z.string().min(3, {
-    message: 'Model must be 3 or more characters long' }),
+  model: z.string().min(3),
+  year: z.number().min(1900).max(2022),
+  color: z.string().min(3),
   status: z.boolean().optional(),
-  buyValue: z.number().int(),
+  buyValue: z.number(),
 });
 
 type IVehicle = z.infer<typeof VehicleZodSchema>;
