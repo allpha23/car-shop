@@ -14,7 +14,7 @@ export type ErrorCatalog = {
 
 export const errorCatalog: ErrorCatalog = {
   EntityNotFound: {
-    message: 'Entity not found',
+    message: 'Object not found',
     httpStatus: 404,
   },
   InvalidMongoId: {
