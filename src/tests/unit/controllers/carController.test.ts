@@ -17,6 +17,9 @@ describe('Car Controller', () => {
 
   before(async () => {
     sinon.stub(carService, 'create').resolves(carMockWithId);
+
+    res.status = sinon.stub().returns(res);
+    res.json = sinon.stub().returns(res)
   });
 
   after(()=>{
