@@ -1,10 +1,5 @@
-# 🚧 README em construção 🚧
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Car Shop
+
+# Sobre o projeto
+
+Neste projeto usei os princípios da programação orientada a objetos (POO) e Generics com _TypeScript_ para construir uma API CRUD para gerenciar uma oficina de automóveis. O banco de dados utilizado no projeto foi o _MongoDB_ e para simplificar o manuseio dos dados dele utilizei o Mongoose Object Data Modeling (ODM). A API também é 100% coberta com testes de unitário.
